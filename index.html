@@ -84,20 +84,20 @@
               <div class="dez-topbar-left">
                 <ul class="social-bx list-inline pull-right">
                   <li>
-  <a href="javascript:void(0);" class="fa fa-facebook"></a>
-</li>
-<li>
-  <a href="javascript:void(0);" class="fa fa-twitter"></a>
-</li>
-<li>
-  <a href="javascript:void(0);" class="fa fa-instagram"></a>
-</li>
-<li>
-  <a href="javascript:void(0);" class="fa fa-whatsapp"></a>
-</li>
-<li>
-  <a href="javascript:void(0);" class="fa fa-youtube"></a>
-</li>
+                        <a href="javascript:void(0);" class="fa fa-facebook"></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="fa fa-twitter"></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="fa fa-instagram"></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="fa fa-whatsapp"></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="fa fa-youtube"></a>
+                      </li>
 
                 </ul>
               </div>
@@ -158,66 +158,92 @@
                   <li class="active">
                     <a href="javascript:;">Home<i class="fa"></i></a>
                   </li>
-                  <li>
-                    <a href="javascript:;" class="dropdown-toggle">Service<i class="fa"></i></a>
-                    <!-- Submenu for Service (hidden) -->
-                    <ul class="dropdown-menu" style="display: none;">
-                      <li><a href="web-development.html">Web Development</a></li>
-                      <li><a href="mobile-app.html">Mobile App Development</a></li>
-                      <li><a href="seo.html">SEO Services</a></li>
+                  <!-- Services Dropdown -->
+                  <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="serviceDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Services <i class="fa"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
+                      <li><a class="dropdown-item" href="#">Container truck transport service</a></li>
+                      <li><a class="dropdown-item" href="#">Open truck transport service</a></li>
+                      <li><a class="dropdown-item" href="#">Truck Loads App</a></li>
+                      <li><a class="dropdown-item" href="#">Digitify - Transport Management System</a></li>
+                      <li><a class="dropdown-item" href="#">OpenFR8 - Transportation Solution in UAE</a></li>
                     </ul>
                   </li>
-                  <li>
-                    <a href="javascript:;" class="dropdown-toggle">About Us<i class="fa"></i></a>
-                    <!-- Submenu for About Us (hidden) -->
-                    <ul class="dropdown-menu" style="display: none;">
-                      <li><a href="company.html">Company</a></li>
-                      <li><a href="team.html">Our Team</a></li>
-                      <li><a href="careers.html">Careers</a></li>
+                  <!-- About Dropdown -->
+                  <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      About Us <i class="fa"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                      <li><a class="dropdown-item" href="#">About Us</a></li>
+                      <li><a class="dropdown-item" href="#">Branches</a></li>
+                      <li><a class="dropdown-item" href="#">Blog</a></li>
+                      <li><a class="dropdown-item" href="#">POD Points</a></li>
+                      <li><a class="dropdown-item" href="#">Glossary</a></li>
                     </ul>
                   </li>
                 </ul>
               </div>
               
+              
+              
               <style>
-
-.nav-item {
-  position: relative; /* Allows absolute positioning of dropdown */
+/* Dropdown Styling */
+/* Dropdown Styling */
+.navbar-nav .nav-item .dropdown-menu {
+  background-color: #00447c; /* Primary color for dropdown background */
+  border-radius: 4px;
 }
 
-.nav-link {
-  padding: 15px 20px; /* Padding for links */
-  color: #343a40; /* Dark text color */
-  text-decoration: none; /* Remove underline */
+.navbar-nav .nav-item .dropdown-menu .dropdown-item {
+  color: #fff; /* Text color */
+  padding: 10px 20px;
 }
 
-.nav-link:hover {
-  background-color: #e2e6ea; /* Background on hover */
-  color: #0056b3; /* Change text color on hover */
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+  background-color: #003366; /* Hover color */
+  color: #fff;
 }
 
-.dropdown-menu {
-  display: none; /* Initially hide dropdowns */
-  position: absolute; /* Position them below the parent */
-  background-color: white; /* White background for dropdown */
-  border: 1px solid #ddd; /* Border around dropdown */
-  z-index: 1000; /* Ensure dropdown is above other content */
+/* Main nav links */
+.navbar-nav .nav-link {
+  color: #ffffff; /* Text color */
 }
 
-.dropdown:hover .dropdown-menu {
-  display: block; /* Show dropdown on hover */
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
+  color: #f0b429; /* Hover/Active color */
 }
 
-.dropdown-item {
-  padding: 10px 15px; /* Padding for dropdown items */
-  color: #343a40; /* Text color for dropdown items */
+/* Smooth transition for dropdown on hover */
+.navbar-nav .nav-item .dropdown-menu {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  visibility: hidden;
 }
 
-.dropdown-item:hover {
-  background-color: #f0f0f0; /* Change background on hover */
+.navbar-nav .nav-item:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
               </style>
+
+              <script>
+                // Optional: If you need to ensure the dropdown only toggles on click and closes when clicked outside
+document.addEventListener("click", function (event) {
+  var dropdowns = document.querySelectorAll('.dropdown-toggle');
+  dropdowns.forEach(function(dropdown) {
+    if (!dropdown.contains(event.target)) {
+      dropdown.nextElementSibling.classList.remove('show'); // Close if clicked outside
+    }
+  });
+});
+
+                </script>
             </div>
           </div>
         </div>
