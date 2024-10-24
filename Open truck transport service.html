@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="robots" content="" />
+    <meta
+      name="description"
+      content="CargoZone - Transport and Cargo Template"
+    />
+    <meta
+      property="og:title"
+      content="CargoZone - Transport and Cargo Template"
+    />
+    <meta
+      property="og:description"
+      content="CargoZone - Transport and Cargo Template"
+    />
+    <meta property="og:image" content="" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- FAVICONS ICON -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+
+    <!-- PAGE TITLE HERE -->
+    <title>CargoZone - Transport and Cargo Template</title>
+
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width" />
+
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" type="text/css" href="css/plugins.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/templete.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      class="skin"
+      href="css/skin/skin-1.css"
+    />
+  </head>
+  <body id="bg">
+    <div class="page-wraper">
+      <div id="loading-area" class="loading-page-1">
+        <div class="spinner">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="8" cy="8" r="7" stroke-width="1" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Header -->
+      <header class="site-header mo-left">
+        <!-- Main Header -->
+        <div
+          class="sticky-header header-curve main-bar-wraper navbar-expand-lg"
+        >
+          <div class="main-bar bg-primary clearfix">
+            <div class="container clearfix">
+              <!-- Website Logo -->
+              <div class="logo-header logo-dark mostion">
+                <a href="index.html"
+                  ><img src="images/logo2.png" width="193" height="89" alt=""
+                /></a>
+              </div>
+              <!-- Nav Toggle Button -->
+              <button
+                class="navbar-toggler collapsed navicon justify-content-end"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <!-- Extra Nav -->
+              <div class="extra-nav">
+                <div class="extra-cell">
+                  <button
+                  id="truck-rate-btn"
+                  type="button"
+                  class="site-button bg-primary-dark"
+                >
+                  <i class="fa fa-truck"></i> Truck Rates
+                </button>
+                </div>
+              </div>
+              <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="nav navbar-nav">
+                  <li class="active">
+                    <a href="javascript:;">Home<i class="fa"></i></a>
+                  </li>
+                  <!-- Services Dropdown -->
+                  <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="serviceDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Services <i class="fa"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
+                      <li><a class="dropdown-item" href="#">Container truck transport service</a></li>
+                      <li><a class="dropdown-item" href="#">Open truck transport service</a></li>
+                      <li><a class="dropdown-item" href="#">Truck Loads App</a></li>
+                      <li><a class="dropdown-item" href="#">Digitify - Transport Management System</a></li>
+                      <li><a class="dropdown-item" href="#">OpenFR8 - Transportation Solution in UAE</a></li>
+                    </ul>
+                  </li>
+                  <!-- About Dropdown -->
+                  <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      About Us <i class="fa"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                      <li><a class="dropdown-item" href="#">About Us</a></li>
+                      <li><a class="dropdown-item" href="#">Branches</a></li>
+                      <li><a class="dropdown-item" href="#">Blog</a></li>
+                      <li><a class="dropdown-item" href="#">POD Points</a></li>
+                      <li><a class="dropdown-item" href="#">Glossary</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              
+              
+              
+              <style>
+/* Dropdown Styling */
+/* Dropdown Styling */
+/* Change the text color of Services and About Us links to black */
+#serviceDropdown, #aboutDropdown {
+  color: #000; /* Set text color to black */
+}
+
+#serviceDropdown:hover, #aboutDropdown:hover {
+  color: #003366; /* Optional: Change color on hover if needed */
+}
+
+.navbar-nav .nav-item .dropdown-menu {
+  background-color: #00447c; /* Primary color for dropdown background */
+  border-radius: 4px;
+}
+
+.navbar-nav .nav-item .dropdown-menu .dropdown-item {
+  color: #fff; /* Text color */
+  padding: 10px 20px;
+}
+
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+  background-color: #003366; /* Hover color */
+  color: #fff;
+}
+
+/* Main nav links */
+.navbar-nav .nav-link {
+  color: #ffffff; /* Text color */
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
+  color: #f0b429; /* Hover/Active color */
+}
+
+/* Smooth transition for dropdown on hover */
+.navbar-nav .nav-item .dropdown-menu {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  visibility: hidden;
+}
+
+.navbar-nav .nav-item:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+              </style>
+
+              <script>
+                // Optional: If you need to ensure the dropdown only toggles on click and closes when clicked outside
+document.addEventListener("click", function (event) {
+  var dropdowns = document.querySelectorAll('.dropdown-toggle');
+  dropdowns.forEach(function(dropdown) {
+    if (!dropdown.contains(event.target)) {
+      dropdown.nextElementSibling.classList.remove('show'); // Close if clicked outside
+    }
+  });
+});
+
+                </script>
+            </div>
+          </div>
+        </div>
+        <!-- Main Header END -->
+      </header>
+      <!-- Header END -->
+      <!-- Content -->
+      <div class="page-content bg-white">
+        <!-- inner page banner -->
+        <div
+          class="dez-bnr-inr overlay-black-middle"
+          style="background-image: url(images/background/bg4.jpg)"
+        >
+            <div class="container">
+                <div class="dez-bnr-inr-entry">
+                    <h1 class="text-white">Open Truck & Lorry Transport Services</h1>
+                    <p class="text-white">
+                        An Eicher 19 feet or Eicher 20 feet open truck (Eicher body) is a type of commercial vehicle characterized by its open cargo space. These trucks are commonly used for transporting goods such as industrial equipment and building supplies, making them ideal for various logistics and delivery applications. Their design allows for easy loading and unloading, accommodating a range of cargo sizes and types.
+                    </p>
+                    <a href="truck-rates.html" class="site-button bg-primary-dark">
+                        Check truck rates
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <h4 style="text-align: justify; margin-left: 50px; margin-right: 50px; margin-top: 50px;">In India, FR8 is a well-known leader in providing open truck & lorry transport services for transferring commodities. With our extensive understanding of the sector and a dedicated team of professionals, we ensure the secure transport of containers to a range of places. Our commitment to excellence, dependability, and efficiency sets us apart as a trustworthy partner for all of your open truck transport requirements.</h4>
+        <!-- inner page banner END -->
+       
+          <h1 style="text-align: center;">19 Feet Truck / 20 Feet Truck (Eicher Body)</h1>
+          <p style="text-align: justify; margin-left: 50px; margin-right: 50px;">
+            Our fleet includes 19-foot and 20-foot trucks made from durable steel or lightweight aluminum, both featuring a flatbed design with sidewalls. These open trucks offer an economical solution for transporting goods over both short and long distances. In 2020, we began providing 19-foot trucks to meet the transportation needs of our customers, ensuring reliable and efficient delivery of their goods.
+          </p>
+          <!-- Image section -->
+          <img class="image right" src="images/background/bg1.jpg" style="margin-right: 50px;" alt="Image">
+          <section class="content" style="margin-left: 50px;">
+            <p><b>Truck Availability:</b> We have more than 17,000 verified 19-foot trucks that are available 24/7.</p>
+            <p><b>Service Coverage:</b> In every corner of India, we offer our services.</p>
+            <p><b>Goods we transport:</b> We transport all kinds of goods that will fit on 19-foot trucks, like hardware, empty cylinders, waste clothes, scrap, etc.</p>
+            
+            <!-- Table section -->
+            <table>
+              <thead>
+                <tr>
+                  <th>Specifications</th>
+                  <th>19 Feet Truck</th>
+                  <th>20 Feet Truck</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Length</td>
+                  <td>19 feet</td>
+                  <td>20 feet</td>
+                </tr>
+                <tr>
+                  <td>Width</td>
+                  <td>7</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>Open truck capacity</td>
+                  <td>7-9 tons</td>
+                  <td>8-10 tons</td>
+                </tr>
+                <tr>
+                  <td>Wheels</td>
+                  <td>6</td>
+                  <td>8</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+          </section>
+  
+        <h1 style="text-align: center;">10 Wheeler Truck (10 Tyre Truck / 10 Chakka Truck)</h1>
+        <p style="text-align: justify; margin-left: 50px; margin-right: 50px;">
+          A 10 wheeler truck, also known as a 10 tyre truck or 10 chakka truck are large commercial vehicles that have six wheels, with four of them being driving wheels. They offer significant advantages for businesses that need to transport large quantities of goods over short distances, say Chennai to Trichy. With over 1500 verified 10 wheel lorry, we stand as a reliable partner for all your logistics needs.        </p>
+        <!-- Image section -->
+        <img class="image right" src="images/background/bg1.jpg" style="margin-right: 50px; margin-top: 50px;" alt="Image">
+        <section class="content" style="margin-left: 50px;">
+          <p><b>Ideal for:</b>  Medium-sized cargo loads, palletized goods, machinery transportation.</p>
+          <p><b>Service Coverage:</b> Our 10 wheeler trucks are used for transporting goods and machinery within a city or surrounding regions. Our services extend nationwide.</p>
+          <p><b>Goods we transport: </b> We transport all kinds of goods that will fit on 10 wheel/10 tyre/10 chakka trucks, like steel and metal products, construction materials, pipes, machinery, agricultural equipment, and more.</p>
+          
+          <!-- Table section -->
+          <table>
+            <thead>
+              <tr>
+                <th>
+                  Specifications</th>
+                <th>10 Wheeler Truck</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Length</td>
+                <td>22 -24 feet</td>
+              </tr>
+              <tr>
+                <td>Width</td>
+                <td>7.5 - 8</td>
+              </tr>
+              <tr>
+                <td>Height</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Volume</td>
+                <td>495</td>
+              </tr>
+              <tr>
+                <td>Load capacity (Min & Max)</td>
+                <td>16 - 18 Tons</td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+        </section>
+
+      <h1 style="text-align: center;">12 Wheeler Truck (12 Tyre Truck / 12 Chakka Truck)</h1>
+      <p style="text-align: justify; margin-left: 50px; margin-right: 50px;">
+        A 12-wheeler truck is a versatile vehicle commonly used for transporting goods over medium to long distances. They are not too big, not too small, but just right. These trucks are used to ensure prompt and efficient delivery of goods to customers.
+      </p>
+      <!-- Image section -->
+      <img class="image right" src="images/background/bg1.jpg" style="margin-right: 50px; margin-top: 50px;" alt="Image">
+      <section class="content" style="margin-left: 50px;">
+        <p><b>TIdeal for:</b> Oversized or overweight cargo, construction materials, and industrial equipment.</p>
+        <p><b>Service Coverage:</b> 12-tyre trucks are perfect for long-distance hauls, providing services across the country.</p>
+        <p><b>Goods we transport:</b> We transport all kinds of goods that will fit on 12-wheel/12-tyre/12-chakka trucks, including construction materials, machinery, industrial equipment such as generators, oversized project cargo, bulk commodities like coal and grains, and more.</p>
+        
+         <!-- Table section -->
+         <table>
+          <thead>
+            <tr>
+              <th>
+                Specifications</th>
+              <th>12 Wheeler Truck</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Length</td>
+              <td>25 -26 feet</td>
+            </tr>
+            <tr>
+              <td>Width</td>
+              <td>7.8 - 8</td>
+            </tr>
+            <tr>
+              <td>Height</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>Volume</td>
+              <td>608.4</td>
+            </tr>
+            <tr>
+              <td>Load capacity (Min & Max)</td>
+              <td>21 - 25 Tons</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+      </section>
+
+    <h1 style="text-align: center;">14 Wheeler Truck (14 Tyre Truck / 14 Chakka Truck)</h1>
+    <p style="text-align: justify; margin-left: 50px; margin-right: 50px;">
+      14 Wheeler Trucks are engineered for maximum capacity, making them ideal for transporting goods across vast distances. With an immense load capacity of up to 30 tons, these trucks are essential for large-scale logistics. They ensure your long-distance haul is efficient, reliable, and stress-free.    </p>
+    <!-- Image section -->
+    <img class="image right" src="images/background/bg1.jpg" style="margin-right: 50px; margin-top: 50px;" alt="Image">
+    <section class="content" style="margin-left: 50px;">
+      <p><b>Ideal for:</b>  Oversized cargo, heavy machinery, and bulk materials.</p>
+      <p><b>Service Coverage:</b> Standard 14-tyre trucks offer seamless nationwide services for long-distance transportation.</p>
+      <p><b>Goods we transport:</b> Suitable for transporting oversized project cargo like wind turbine blades, massive construction equipment, and bulk quantities of materials.</p>
+      
+      <!-- Table section -->
+      <table>
+        <thead>
+          <tr>
+            <th>Specifications</th>
+            <th>14 Wheeler Truck</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Length</td>
+            <td>28.5 - 29 feet</td>
+          </tr>
+          <tr>
+            <td>Width</td>
+            <td>8 - 8.5</td>
+          </tr>
+          <tr>
+            <td>Height</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>Volume</td>
+            <td>495</td>
+          </tr>
+          <tr>
+            <td>Load capacity (Min & Max)</td>
+            <td>30 Tons</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+    </section>
+
+    <h1 style="text-align: center;">Stress-Free Lorry Transport Service</h1>
+    <p style="text-align: justify; margin-left: 50px; margin-right: 50px;">
+      Are you looking for reliable and efficient lorry transport services near you? We offer the perfect solution, providing the best lorry transport service with a wide range of lorries across India.    <!-- Image section -->
+    <img class="image right" src="images/background/bg1.jpg" style="margin-right: 50px; margin-top: 10px;" alt="Image">
+    <section class="content" style="margin-left: 50px;">
+      <p><b>Experience:</b>  We have a strong track record in the field of goods transportation.</p>
+      <p><b>Flexibility:</b> We offer a variety of open trucks and lorries, allowing you to select the one that best fits your requirements.</p>
+      <p><b>Customer Assistance:</b> We're available 24/7. Contact us, and we are ready to assist you with all your queries.</p>
+    <p style="text-align: justify;">We have transported a wide range of goods including carton boxes, FMCG products, electronic goods, furniture, alcoholic beverages, bags, bundles or rolls, drums or barrels, beverages, auto parts, paint, sacks (jute or plastic), medicine, industrial goods, empty bottles, paper bundles, pallets or panels, engineering materials, tyres, packaging materials, and solid sheets. All transportation is done smoothly without any major issues.</p>
+    </section>
+        
+        <style>
+          * {
+            box-sizing: border-box;
+          }
+        
+          .article {
+            width: 900px;
+            margin: 30px;
+            padding: 12px;
+            background: #efefef;
+            border-radius: 5px;
+          }
+        
+          .image {
+            background: silver;
+            width: 500px;
+            height: 400px;
+            border-radius: 5px;
+            padding: 20px;
+            color: #efefef;
+            font-size: 8rem;
+            margin-bottom: 10px; /* Reduced space below the image */
+          }
+        
+          .image.right {
+            float: right;
+            margin-left: 20px;
+          }
+        
+          .content {
+            padding: 0 20px;
+            color: #444;
+          }
+        
+          table {
+            width: 40%;
+            border-collapse: collapse;
+            margin-top: 20px; /* Adds space above the table */
+          }
+        
+          th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+          }
+        
+          th {
+            background-color: #f2f2f2;
+          }
+        
+          /* ClearFix */
+          .group:before,
+          .group:after {
+            content: "";
+            display: table;
+          }
+        
+          .group:after {
+            clear: both;
+          }
+        </style>            
+      
+      
+          <!-- Services END -->
+        </div>
+        <!-- contact area END -->
+      </div>
+      <!-- Content END-->
+      <!-- Footer -->
+      <footer class="site-footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="widget widget_about">
+                  <div class="logo-footer">
+                    <img src="images/footer-logo.png" alt="" />
+                  </div>
+                  <p class="m-t20 m-b15">
+                    <strong>CargoZone</strong> Lorem Ipsum is simply dummy text
+                    of the printing and typesetting industry. Lorem Ipsum has
+                    been the industry's standard dummy text ever since the
+                    1500s, when an unknown printer took a Gallery of type and
+                    scrambled.
+                  </p>
+                  <ul class="dez-social-icon dez-border">
+                    <li>
+                      <a class="fa fa-facebook" href="javascript:void(0);"></a>
+                    </li>
+                    <li>
+                      <a class="fa fa-twitter" href="javascript:void(0);"></a>
+                    </li>
+                    <li>
+                      <a class="fa fa-linkedin" href="javascript:void(0);"></a>
+                    </li>
+                    <li>
+                      <a class="fa fa-facebook" href="javascript:void(0);"></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="widget widget_services">
+                  <h3 class="m-b10">Our services</h3>
+                  <div class="dez-separator bg-primary"></div>
+                  <ul>
+                    <li><a href="services-2.html">Residential Cargo</a></li>
+                    <li><a href="services-2.html">Office Cargo</a></li>
+                    <li><a href="services-2.html">Wall Painting</a></li>
+                    <li><a href="services-2.html">Window Cargo</a></li>
+                    <li><a href="services-2.html">Commercial Cargo</a></li>
+                    <li><a href="services-2.html">Office Cargo</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="widget widget_getintuch">
+                  <h3 class="m-b10">Contact us</h3>
+                  <div class="dez-separator bg-primary"></div>
+                  <ul>
+                    <li>
+                      <i class="fa fa-map-marker"></i
+                      ><strong>address</strong> demo address #8901 Marmora Road
+                      Chi Minh City, Vietnam
+                    </li>
+                    <li>
+                      <i class="fa fa-phone"></i
+                      ><strong>phone</strong>0800-123456 (24/7 Support Line)
+                    </li>
+                    <li>
+                      <i class="fa fa-fax"></i><strong>FAX</strong>(123)
+                      123-4567<br />
+                      000 123 2294 089
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="widget widget_gallery">
+                  <h3 class="m-b10">Recent Post</h3>
+                  <div class="dez-separator bg-primary"></div>
+                  <ul>
+                    <li class="img-effect2">
+                      <a href="javascript:void(0);"
+                        ><img src="images/gallery/pic1.jpg" alt=""
+                      /></a>
+                    </li>
+                    <li class="img-effect2">
+                      <a href="javascript:void(0);"
+                        ><img src="images/gallery/pic2.jpg" alt=""
+                      /></a>
+                    </li>
+                    <li class="img-effect2">
+                      <a href="javascript:void(0);"
+                        ><img src="images/gallery/pic3.jpg" alt=""
+                      /></a>
+                    </li>
+                    <li class="img-effect2">
+                      <a href="javascript:void(0);"
+                        ><img src="images/gallery/pic4.jpg" alt=""
+                      /></a>
+                    </li>
+                    <li class="img-effect2">
+                      <a href="javascript:void(0);"
+                        ><img src="images/gallery/pic5.jpg" alt=""
+                      /></a>
+                    </li>
+                    <li class="img-effect2">
+                      <a href="javascript:void(0);"
+                        ><img src="images/gallery/pic7.jpg" alt=""
+                      /></a>
+                    </li>
+                    <li class="img-effect2">
+                      <a href="javascript:void(0);"
+                        ><img src="images/gallery/pic6.jpg" alt=""
+                      /></a>
+                    </li>
+                    <li class="img-effect2">
+                      <a href="javascript:void(0);"
+                        ><img src="images/gallery/pic8.jpg" alt=""
+                      /></a>
+                    </li>
+                    <li class="img-effect2">
+                      <a href="javascript:void(0);"
+                        ><img src="images/gallery/pic9.jpg" alt=""
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row dez-newsletter m-lr0 m-b20 p-a30">
+              <div class="col-lg-4 col-md-12">
+                <div class="icon-bx-wraper left">
+                  <div class="icon-lg text-primary radius m-t10">
+                    <a href="javascript:void(0);" class="icon-cell"
+                      ><i class="fa fa-envelope-o"></i
+                    ></a>
+                  </div>
+                  <div class="icon-content">
+                    <h2 class="dez-tilte m-b0">NewsLetter</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-12">
+                <div class="newsLetter-bx">
+                  <div class="dzSubscribeMsg"></div>
+                  <form
+                    role="search"
+                    method="post"
+                    action="script/mailchamp.php"
+                    class="dzSubscribe"
+                  >
+                    <div class="input-group">
+                      <input
+                        name="dzEmail"
+                        type="email"
+                        placeholder="Email Address"
+                        required
+                        class="form-control"
+                      />
+                      <span class="input-group-btn">
+                        <button
+                          type="submit"
+                          name="submit"
+                          value="Submit"
+                          class="site-button m-l10"
+                        >
+                          Submit
+                        </button>
+                      </span>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer Bottom Part -->
+        <div class="footer-bottom bg-primary">
+          <div class="container">
+            <div class="row text-white">
+              <div class="col-lg-4 text-left">
+                <span>© Copyright 2023</span>
+              </div>
+              <div class="col-lg-4 text-center">
+                <span>
+                  Design With <i class="fa fa-heart heart"></i> By DexignZone
+                </span>
+              </div>
+              <div class="col-lg-4 text-right">
+                <ul class="list-inline">
+                  <li><a href="about-2.html"> About</a></li>
+                  <li><a href="help.html"> Help Desk</a></li>
+                  <li><a href="privacy-policy.html"> Privacy Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer END-->
+      <button class="scroltop fa fa-arrow-up"></button>
+    </div>
+    <!-- JavaScript files ========================================= -->
+    <script src="js/jquery.min.js"></script>
+    <!-- JQUERY.MIN JS -->
+    <script src="plugins/bootstrap/js/popper.min.js"></script>
+    <!-- BOOTSTRAP.MIN JS -->
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- BOOTSTRAP.MIN JS -->
+    <script src="plugins/bootstrap-select/bootstrap-select.min.js"></script>
+    <!-- FORM JS -->
+    <script src="plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
+    <!-- FORM JS -->
+    <script src="plugins/magnific-popup/magnific-popup.js"></script>
+    <!-- MAGNIFIC POPUP JS -->
+    <script src="plugins/counter/waypoints-min.js"></script>
+    <!-- WAYPOINTS JS -->
+    <script src="plugins/counter/counterup.min.js"></script>
+    <!-- COUNTERUP JS -->
+    <script src="plugins/imagesloaded/imagesloaded.js"></script>
+    <!-- IMAGESLOADED -->
+    <script src="plugins/masonry/masonry-3.1.4.js"></script>
+    <!-- MASONRY -->
+    <script src="plugins/masonry/masonry.filter.js"></script>
+    <!-- MASONRY -->
+    <script src="plugins/owl-carousel/owl.carousel.js"></script>
+    <!-- OWL SLIDER -->
+    <script src="plugins/switcher/js/switcher.js"></script>
+    <!-- SWITCHER JS  -->
+    <script src="js/custom.js"></script>
+    <!-- CUSTOM FUCTIONS  -->
+    <script src="js/dz.carousel.js"></script>
+    <!-- SORTCODE FUCTIONS  -->
+    <script src="js/dz.ajax.js"></script>
+    <!-- CONTACT JS  -->
+  </body>
+</html>
