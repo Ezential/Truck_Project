@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truck Freight Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>FR8 - Transport Truck Rentals & Rates</h1>
+    </header>
+    <section>
+        <div class="calculator-container">
+            <h2>Truck Freight Calculator</h2>
+            <!-- First location set: Bangalore to -->
+            <div class="locations">
+                <h3>Bangalore to</h3>
+                <div class="location-buttons">
+                    <button>Chennai</button>
+                    <button>Cochin</button>
+                    <button>Coimbatore</button>
+                    <button>Goa</button>
+                    <button>Hyderabad</button>
+                    <button>Kolkata</button>
+                    <button>Madurai</button>
+                    <button>Mumbai</button>
+                    <button>Pune</button>
+                    <button>Visakhapatnam</button>
+                </div>
+            </div>
+            <!-- Additional location sets: Coimbatore to -->
+            <div class="locations">
+                <h3>Coimbatore to</h3>
+                <div class="location-buttons">
+                    <button>Bangalore</button>
+                    <button>Chennai</button>
+                    <button>Cochin</button>
+                    <button>Hyderabad</button>
+                    <button>Hosur</button>
+                    <button>Madurai</button>
+                    <button>Pune</button>
+                    <button>Tirunelveli</button>
+                    <button>Trichy</button>
+                </div>
+            </div>
+            <!-- Guwahati to -->
+            <div class="locations">
+                <h3>Guwahati to</h3>
+                <div class="location-buttons">
+                    <button>Bangalore</button>
+                    <button>Bhubaneswar</button>
+                    <button>Hyderabad</button>
+                    <button>Kolkata</button>
+                    <button>Patna</button>
+                    <button>Ranchi</button>
+                    <button>Siliguri</button>
+                </div>
+            </div>
+            <!-- Hyderabad to -->
+            <div class="locations">
+                <h3>Hyderabad to</h3>
+                <div class="location-buttons">
+                    <button>Bangalore</button>
+                    <button>Chennai</button>
+                    <button>Coimbatore</button>
+                    <button>Kolkata</button>
+                    <button>Madurai</button>
+                    <button>Mumbai</button>
+                    <button>Mysore</button>
+                    <button>Vijayawada</button>
+                    <button>Visakhapatnam</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="rates-container">
+            <h2>Transport Truck Rates</h2>
+            <div class="from-to">
+                <p>From: <strong>Kolkata</strong></p>
+                <p>To: <strong>Visakhapatnam</strong></p>
+            </div>
+            <div class="truck-options">
+                <button>32FT MXL Container</button>
+                <button>32FT SXL Container</button>
+                <button>20-24 FT Container</button>
+                <button>17-24 FT Open</button>
+                <button>10 Whl Open</button>
+                <button>12 Whl Open</button>
+                <button>14 Whl Open</button>
+            </div>
+            <div class="rates-list">
+                <div class="rate-item">
+                    <p>Haldia <span class="dot green"></span> Visakhapatnam - 16 Ton</p>
+                    <p>₹41000</p>
+                    <button>Book Truck</button>
+                </div>
+                <div class="rate-item">
+                    <p>Panchla <span class="dot red"></span> Visakhapatnam - 7 Ton</p>
+                    <p>₹30000</p>
+                    <button>Book Truck</button>
+                </div>
+                <div class="rate-item">
+                    <p>Budge Budge <span class="dot green"></span> Visakhapatnam - 18 Ton</p>
+                    <p>₹41000</p>
+                    <button>Book Truck</button>
+                </div>
+                <div class="rate-item">
+                    <p>Haldia <span class="dot green"></span> Visakhapatnam - 16 Ton</p>
+                    <p>₹39000</p>
+                    <button>Book Truck</button>
+                </div>
+                <!-- Add more rates as needed -->
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+
+<style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #002e6d;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.calculator-container, .rates-container {
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #002e6d;
+}
+
+.location-buttons, .truck-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 1rem 0;
+}
+
+button {
+    background-color: #fff;
+    color: #002e6d;
+    border: 2px solid #002e6d;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #002e6d;
+    color: white;
+}
+
+.rates-container .from-to {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+
+.rates-list {
+    margin-top: 1rem;
+}
+
+.rate-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.rate-item p {
+    margin: 0;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot.green {
+    background-color: #4CAF50;
+}
+
+.dot.red {
+    background-color: #f44336;
+}
+
+
+</style>
